@@ -1,0 +1,100 @@
+
+.Home {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+  
+  .leftContainer {
+    width: 40vw;
+    background-color: rgba(81, 232, 141, 1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centraliza verticalmente */
+    flex-grow: 1; /* Ocupa o espaço restante verticalmente */
+  }
+  
+  .footer {
+    font-weight: regular;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centraliza verticalmente */
+    flex-grow: 1; /* Ocupa o espaço restante verticalmente */
+  }
+  
+  .rightContainer {
+    position: relative;
+    background: url('../../assets/background.svg') no-repeat center center;
+    background-color: rgb(0, 0, 0);
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 2;
+    padding-top: 13rem;
+  }
+  
+  .rightContainer h2{
+    color: aliceblue;
+    font-size: 2rem;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+  
+  .input-with-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 25vw;
+    margin: 0 auto;
+  }
+  
+  .input-field {
+    width: 100%;
+    height: 6vh;
+    color: rgb(255, 255, 255);
+    padding-right: 40px; /* Espaço para o botão SVG */
+    font-size: 20px; /* Tamanho da fonte */
+    border-radius: 8px;
+    border: 2px solid aliceblue;
+    background-color: #ffffff56;
+    padding-left: 10px;
+  }
+  .input-field::placeholder {
+    font-weight: 100;
+    font-style: italic;
+    color: #ffffffc1; /* Defina a cor desejada para o placeholder */
+  }
+  
+  .svg-button {
+    position: absolute;
+    right: 5px; /* Ajuste conforme necessário */
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .svg-button img {
+    width: 25px;
+  }
+  input:focus {
+    outline: none;
+  }
+  
+  .backgraundChampion {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5; /* Ajuste a opacidade conforme necessário */
+    z-index: -1; /* Coloca a imagem em um nível inferior, atrás do conteúdo */
+  }
+  
+  
