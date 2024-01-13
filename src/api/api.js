@@ -91,6 +91,10 @@ async function getSummonerMatches(puuid) {
 
 
 }
+
+
+// https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Warwick.png  pega imagem do campiao
+
 //BR1_2871919359
 
 async function getMatchData(matchId) {
@@ -108,9 +112,12 @@ async function getMatchData(matchId) {
     for(player of participants) {
       const playerData = {
         puuid: player.puuid,
+        nomeJogador: player.summonerName,
         champion: player.championName,
+        championImage: `https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/${player.championName}.png`,
         kills:	player.kills,
         deaths: player.deaths,
+        assists: player.assists,
         goldEarned: player.goldEarned,
         individualPosition: player.individualPosition,
         itens: {
